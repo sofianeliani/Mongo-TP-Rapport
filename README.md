@@ -154,7 +154,7 @@ db.places.insertMany( [
 
 ```
 
-Ou les index geoHaystack qui permet de définir une aire suivant des points sur un axe en 2 dimensions.
+Ou les index geoHaystack qui permettent de définir une aire suivant des points sur un axe en 2 dimensions.
 
 (https://docs.mongodb.com/manual/tutorial/build-a-geohaystack-index/)
 
