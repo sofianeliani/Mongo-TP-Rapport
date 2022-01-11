@@ -130,5 +130,58 @@ db.places.find({
 
 ```
 
+Ou les index 2dsphere qui permettent de placer des coordonnées latitudes et longitudes.
+
+Prenons un exemple de cas ou une collection se nommant « places » avec des documents, stockent des données de localisation sous forme de point GeoJSON dans un champs nommé loc  :
+
+(https://docs.mongodb.com/manual/core/2dsphere/)
+
+```ini
+# MongoDB documentation
+
+db.places.insertMany( [
+    {
+        loc : { type: "Point", coordinates: [ -73.97, 40.77 ] },
+        name: "Central Park",
+        category : "Parks"
+    },
+    {
+        loc : { type: "Point", coordinates: [ -73.88, 40.78 ] },
+        name: "La Guardia Airport",
+        category : "Airport"
+    }
+    ])
+
+```
+
+Ou les index geoHaystack qui permet de définir une aire suivant des points sur un axe en 2 dimensions.
+
+(https://docs.mongodb.com/manual/tutorial/build-a-geohaystack-index/)
+
+Pour ces documents en exemple : 
+
+```ini
+# MongoDB documentation
+
+{ _id : 100, pos: { lng : 126.9, lat : 35.2 } , type : "restaurant"}
+{ _id : 200, pos: { lng : 127.5, lat : 36.1 } , type : "restaurant"}
+{ _id : 300, pos: { lng : 128.0, lat : 36.7 } , type : "national park"}
+
+```
+
+Les index suivants stockent des clés dans une unité de longitude ou de latitude : 
+
+```ini
+# MongoDB documentation
+
+db.places.createIndex( 
+    { pos : "geoHaystack", type : 1 } ,
+    { bucketSize : 1 } 
+)
+
+```
+
+
+
 
 # }
