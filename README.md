@@ -28,7 +28,7 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
 5. [Les requêtes géospatiales et notre projet](#les-requêtes-géospatiales-et-notre-projet)
-6. [L’agrégation avec MongoDB](#l’agrégation-avec-MongoDB)
+6. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
 
 
 
