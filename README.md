@@ -56,11 +56,19 @@ Dans le cadre de notre exemple vu en cours, ce restaurant se doit de manipuler u
 
 D’après le site : https://analyticsinsights.io/
 Les avantages d’une telle installation sont les suivants :
+
 •	Possibilité de déployer de nouvelles fonctionnalités en peu de temps
+
 •	Un très bon support technique
+
 •	Grandes capacités d’analyse grâce à la librairie spark
-•	Une haute performance et la capacité de récupérer des documents ultra rapidement tout en gérant un important flux de données
-•	A l’aide de test de performance, il est vu que la sécurité est améliorée avec la communication https entre les nœuds de jeux de réplicas
+
+•	Une haute performance et la capacité de récupérer des documents ultra 
+rapidement tout en gérant un important flux de données
+
+•	A l’aide de test de performance, il est vu que la sécurité est améliorée avec 
+la communication https entre les nœuds de jeux de réplicas
+
 
 Attention, bien que MongoDB est force de proposition sur ce type de projet, et que il est l’objet de ce cours, d’autre SGBD sont présente sur le marché et mérite que l’on s’y attarde. 
 
