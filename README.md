@@ -53,6 +53,7 @@ MongoDB et son langage d’interrogation est extrêmement puissant. Nous pouvons
 
  L’avantage de ce fonctionnement dans ce cours est, qu’il va falloir faire croitre notre application au fil du temps et effectuer des recherches poussées à des fins de statistiques, tout en épargnant certaines informations, et ce sur important jeux de données.
 
+Bien évidement nous verrons cela plus bas dans ce rapport.
 
 ## MongoDB du NoSQL
 
