@@ -49,7 +49,15 @@ Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui on
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/nodejs.png?raw=true "NodeJS")          ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/compass.png?raw=true "NodeJS")         ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/mongodb.png?raw=true "NodeJS")
 
 
-Notre choix concernant les technologies à utiliser porte sur atlas, compass et la création d'une api NodeJS pour les requêtes 
+Notre choix concernant les technologies à utiliser porte sur atlas, compass et la création d'une api NodeJS pour les requêtes.
+
+Ceci étant nous vous montreros au fur et à mesure de ce rapport le parallèle entre les requêtes faite avec notre API nodeJS et les requêtes natives.
+
+Concernant notre choix technologique, en vue des consignes du formateur, et du travail de groupe imposé, il était préférable de choisir un outil performant et que chacun sait manipuler. Atlas offre un service gratuit et performant afin d'héberger une base de données Mongo via un cluster (accessible avec une simple ligne à copier-coller dans l'outil prévu à cet effet).
+
+C'est ensuite compass qui prend le relai, pour sa simplicité d'installation et d'utilisation. Compass va très facilement nous aider à naviguer dans notre base, à tester nos requêtes avec son terminal intégrer, et va également nous offrir une belle visu sur le jeux de données présent dans la base (voir screenshot ci-dessous).
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/Compass.png?raw=true "Compass")
 
 
 ## MongoDB vs MySQL
