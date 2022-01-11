@@ -57,7 +57,7 @@ Concernant notre choix technologique, en vue des consignes du formateur, et du t
 
 C'est ensuite compass qui prend le relai, pour sa simplicité d'installation et d'utilisation. Compass va très facilement nous aider à naviguer dans notre base, à tester nos requêtes avec son terminal intégrer, et va également nous offrir une belle visu sur le jeux de données présent dans la base (voir screenshot ci-dessous).
 
-![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/Compass.png?raw=true "Compass")
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/compass.png?raw=true "Compass")
 
 
 ## MongoDB vs MySQL
