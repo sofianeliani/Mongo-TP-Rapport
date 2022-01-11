@@ -28,6 +28,7 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
 5. [Les requêtes géospatiales et notre projet](#les-requêtes-géospatiales-et-notre-projet)
+6. [L’agrégation avec MongoDB](#l’agrégation-avec-MongoDB)
 
 
 
@@ -198,6 +199,17 @@ Nous pouvons également offrir une visu graphique sur la situation global et ind
 Tout cela peut aider grandement aux diverses études de marchés de la marque et est au fond un système obligatoire intégrer pour y parvenir.
 
 MongoDB est force de proposition pour arriver à ce résultat pour toutes les raisons techniques cité plus haut.
+
+
+## L’agrégation avec MongoDB
+
+Afin d’illustrer correctement le terme d’agrégation, nous allons utiliser notre collection Restaurants vu en cours.
+
+Celle-ci contient les adresses complètes, les arrondissements, le type de cuisine, la notation, le nom, la zone géographique et la longitude-latitude de chaque restaurant.
+Nous pouvons donc calculer par exemple, le nombre total de commandes (si il y’en a) faite sur un restaurant en particulier et faire la somme de celle-ci.
+
+La fonction aggregate() et les mots clés suivants :  $group, $sum pour sommer tous nos éléments
+
 
 
 # }
