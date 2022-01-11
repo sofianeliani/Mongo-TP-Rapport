@@ -13,7 +13,8 @@ Nous utilisons javascript comme langage natif avec MongoDB.
 MongoDB se caractérise par son contenu, des documents et des collections réunies en base.
 Voici un exemple de documents stocké dans une collections appelé Restaurants :
 
-//insert-image
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/tree/main/img/Documents-Example.png?raw=true "Documents Example")
+
 
 Ceci est un exemple d’une base de données par le formateur Mounir Bendahmane dans le cadre de ce cours. La base de données Restaurants possède également une collection du même nom.
 Présent dans ces documents vous pouvez voir des données en format JSON, et c’est ce qui fait qu’un document à l’autre, la structure des données peut changer au fil du temps sans impacter le fonctionnement de notre base.
