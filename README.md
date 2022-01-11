@@ -203,6 +203,29 @@ MongoDB est force de proposition pour arriver à ce résultat pour toutes les ra
 
 ## Agrégation avec MongoDB
 
+
+>L’agrégation
+
+Si nous restons sur la définition de l’agrégation d’après la documentation officielle mongo db, l’agrégation est le fait de traiter les informations de plusieurs documents afin d’en retourner le résultat calculé.
+
+Nous pouvons utiliser une opération d’agrégation pour : 
+
+Regrouper des valeurs lié à plusieurs documents, effectuer des opérations sur les données groupées pour renvoyer un résultat unique et enfin analyser l’évolution des données dans le temps (ce qui au passage est parfait pour notre projet de fin de semaine).
+
+>L’agrégation « Pipelines »
+
+Toujours d’après la documentation officielle, un pipeline d’agrégation se constitue par le fait de traité en une ou plusieurs étapes l’information.
+
+Chaque étape effectue une opération sur les documents d’entrée pour par exemple : 
+
+Filtrer des documents, regrouper des documents puis calculer leurs valeurs.
+Les documents qui sortent d’une étape peuvent être utilisés par l’étape suivante.
+Un pipeline d’agrégation peut renvoyer des résultats pour des groupe de documents, comme pour calculer des totaux, une moyenne maximale ou une moyenne minimale par exemple.
+
+
+
+
+
 Afin d’illustrer correctement le terme d’agrégation, nous allons utiliser notre collection Restaurants vu en cours.
 
 Celle-ci contient les adresses complètes, les arrondissements, le type de cuisine, la notation, le nom, la zone géographique et la longitude-latitude de chaque restaurant.
