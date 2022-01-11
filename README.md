@@ -26,6 +26,7 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 2. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
 3. [MongoDB du NoSQL](#mongodb-du-nosql)
 3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
+4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
 
 
 ## MongoDB vs MySQL
@@ -87,6 +88,45 @@ Nous pouvons également le distribuer et nous permettre d’avoir plusieurs inst
 Une solution simple d’utilisation et efficace dans bien des domaines.
 
 
+## Les requêtes géospatiales 
+
+Sources : ( https://rtavenar.github.io/teaching/nosql_fiche/html/td_textgeo.html)
+
+Plusieurs points s’appuient sur le fait d’utiliser des données géospatiales :
+
+Si l’on souhaite trouver des éléments présents dans la base les plus proches d’un point donné
+
+Si l’on souhaite trouver des éléments présents dans la base entièrement inclus dans un polygone donné
+
+Si l’on souhaite trouver des éléments présents dans la base partiellement inclus dans un polygone donné (pour représenter une rue par exemple)
+
+C’est la que la notion d’index géospatiaux fait son entré : Sources :
+
+( https://docs.mongodb.com/manual/geospatial-queries/)
+( https://practicalprogramming.fr/mongodb-index)
+
+Pour illustrer cela prenons le cas des Index 2d, qui permettent de placer des coordonnées sur un axe en 2 dimensions comme son nom l’indique. 
+
+La requête suivante porte sur des documents situés dans un rectangle défini par [0, 0] dans le coin inférieur gauche et par [100, 100] dans le coin supérieur droit.
+https://docs.mongodb.com/manual/tutorial/query-a-2d-index/
+
+```ini
+# MongoDB documentation
+
+db.places.find({
+    loc:
+    {
+        $geoWithin :
+        {
+            $box : [ 
+                [0, 0], 
+                [100, 100]
+            ]   
+        }
+    }
+})
+
+```
 
 
 # }
