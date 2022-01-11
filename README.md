@@ -23,6 +23,8 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 ## Sommaire
 
 1. [MongoDB vs MySQL](#mongodb-vs-mysql)
+2. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
+
 
 ## MongoDB vs MySQL
 
@@ -35,5 +37,13 @@ Toutes les lignes d’un tableau MySQL ont une composition identique à l’inve
 La clé doit être unique dans les documents (MongoDB) mais peut se retrouver dans d’autres documents, ce qui est impossible avec MySQL.
 Sur MySQL il est obligatoire d’établir des relations (JOINS) entre les différents tableaux
 Il existe bien évidement bien d’autres différences, mais nous en terminerons avec cette brève présentation et nous en verrons d’autres par la suite.
+
+
+## Les fonctionnalités avancées
+
+MongoDB et son langage d’interrogation est extrêmement puissant. Nous pouvons nous permettre d’effectuer toutes les requêtes possibles et de surcroît avoir un résultat beaucoup plus poussé, tout cela de manière simple contrairement à une base relationnelle tel que MySQL par exemple.
+
+ L’avantage de ce fonctionnement dans ce cours est, qu’il va falloir faire croitre notre application au fil du temps et effectuer des recherches poussées à des fins de statistiques, tout en épargnant certaines informations, et ce sur important jeux de données.
+
 
 # }
