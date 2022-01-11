@@ -24,6 +24,7 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 
 1. [MongoDB vs MySQL](#mongodb-vs-mysql)
 2. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
+3. [MongoDB du NoSQL](#mongodb-du-nosql)
 
 
 ## MongoDB vs MySQL
@@ -44,6 +45,25 @@ Il existe bien évidement bien d’autres différences, mais nous en terminerons
 MongoDB et son langage d’interrogation est extrêmement puissant. Nous pouvons nous permettre d’effectuer toutes les requêtes possibles et de surcroît avoir un résultat beaucoup plus poussé, tout cela de manière simple contrairement à une base relationnelle tel que MySQL par exemple.
 
  L’avantage de ce fonctionnement dans ce cours est, qu’il va falloir faire croitre notre application au fil du temps et effectuer des recherches poussées à des fins de statistiques, tout en épargnant certaines informations, et ce sur important jeux de données.
+
+
+## MongoDB du NoSQL
+
+A contrario des SGBDR (Système de gestion de base de données relationnel), MongoDB qui lui s’appui sur le NoSQL s’écarte de cette notion relationnelle pour des problèmes de performance et de scalabilité.
+Une application est dite « Scalable » quand celle-ci s’adapte à des tailles en base possédant un important flux de données, un grand volume, que celle-ci gère un espace-temps, etc…
+
+Dans le cadre de notre exemple vu en cours, ce restaurant se doit de manipuler un nombre important de données afin de récupérer un maximum de données utilisateurs, et pouvoir bien évidement en faire des statistiques.
+
+D’après le site : https://analyticsinsights.io/
+Les avantages d’une telle installation sont les suivants :
+•	Possibilité de déployer de nouvelles fonctionnalités en peu de temps
+•	Un très bon support technique
+•	Grandes capacités d’analyse grâce à la librairie spark
+•	Une haute performance et la capacité de récupérer des documents ultra rapidement tout en gérant un important flux de données
+•	A l’aide de test de performance, il est vu que la sécurité est améliorée avec la communication https entre les nœuds de jeux de réplicas
+
+Attention, bien que MongoDB est force de proposition sur ce type de projet, et que il est l’objet de ce cours, d’autre SGBD sont présente sur le marché et mérite que l’on s’y attarde. 
+
 
 
 # }
