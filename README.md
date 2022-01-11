@@ -27,6 +27,9 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 3. [MongoDB du NoSQL](#mongodb-du-nosql)
 3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
+5. [Les requêtes géospatiales et notre projet](#les-requêtes-géospatiales-et-notre-projet)
+
+
 
 
 ## MongoDB vs MySQL
@@ -182,6 +185,19 @@ db.places.createIndex(
 ```
 
 
+## Les requêtes géospatiales et notre projet
+
+Maintenant que nous en savons un peu plus sur les requêtes géospatiales et leur fonctionnement, la question suivante se pose.
+
+Comment cela peut il s’intégrer au projet dans cette semaine de cours ? 
+Dans notre projet et conformément aux conseils donnés par le formateur Mounir Bendahmane, celui-ci reposera sur la récupération de données clients.
+
+Il serait donc très intéressant de créer un document se chargeant de récupérer et distribuer toutes les informations statistiques voulus : Les zones qui sont les plus fréquentés, lesquels restaurants sont les plus fréquentés, les menus les plus commandés, etc …
+
+Nous pouvons également offrir une visu graphique sur la situation global et individuel de chaque restaurant, arrondissement, client ce qui ajoute du poids à notre argumentaire.
+Tout cela peut aider grandement aux diverses études de marchés de la marque et est au fond un système obligatoire intégrer pour y parvenir.
+
+MongoDB est force de proposition pour arriver à ce résultat pour toutes les raisons techniques cité plus haut.
 
 
 # }
