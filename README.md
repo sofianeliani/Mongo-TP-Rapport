@@ -90,7 +90,7 @@ Une solution simple d’utilisation et efficace dans bien des domaines.
 
 ## Les requêtes géospatiales 
 
-Sources : ( https://rtavenar.github.io/teaching/nosql_fiche/html/td_textgeo.html)
+Sources : (https://rtavenar.github.io/teaching/nosql_fiche/html/td_textgeo.html)
 
 Plusieurs points s’appuient sur le fait d’utiliser des données géospatiales :
 
@@ -102,13 +102,15 @@ Si l’on souhaite trouver des éléments présents dans la base partiellement i
 
 C’est la que la notion d’index géospatiaux fait son entré : Sources :
 
-( https://docs.mongodb.com/manual/geospatial-queries/)
-( https://practicalprogramming.fr/mongodb-index)
+(https://docs.mongodb.com/manual/geospatial-queries/)
+
+(https://practicalprogramming.fr/mongodb-index)
 
 Pour illustrer cela prenons le cas des Index 2d, qui permettent de placer des coordonnées sur un axe en 2 dimensions comme son nom l’indique. 
 
 La requête suivante porte sur des documents situés dans un rectangle défini par [0, 0] dans le coin inférieur gauche et par [100, 100] dans le coin supérieur droit.
-https://docs.mongodb.com/manual/tutorial/query-a-2d-index/
+
+(https://docs.mongodb.com/manual/tutorial/query-a-2d-index/)
 
 ```ini
 # MongoDB documentation
