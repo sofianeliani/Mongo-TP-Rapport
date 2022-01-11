@@ -201,7 +201,7 @@ Tout cela peut aider grandement aux diverses études de marchés de la marque et
 MongoDB est force de proposition pour arriver à ce résultat pour toutes les raisons techniques cité plus haut.
 
 
-## L’agrégation avec MongoDB
+## Agrégation avec MongoDB
 
 Afin d’illustrer correctement le terme d’agrégation, nous allons utiliser notre collection Restaurants vu en cours.
 
