@@ -21,8 +21,20 @@ Présent dans ces documents vous pouvez voir des données en format JSON, et c�
 On dit que le modèle de document mappe les objets du code de nos applications, ce qui facilite grandement le traitement des données.
 
 
+## Présentation du projet
+
+Une chaine de restaurant souhaite récupérer des données clients afin de capitaliser
+sur un flux de personnes sans cesse grandissant 
+(plusieurs dizaine de milliers de clients par semaine dans toute la France).
+
+Le but est de fournir un projet d'application centré sur un stockage des données avec MongoDB.
+
+Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui ont été fait et l'utilité que cela présente pour un projet de cette ampleur.
+
+
 ## Sommaire
 
+0. [Les spécifications techniques](#les-spécifications-techniques)
 1. [MongoDB vs MySQL](#mongodb-vs-mysql)
 2. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
 3. [MongoDB du NoSQL](#mongodb-du-nosql)
@@ -32,6 +44,12 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 6. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
 
 
+## Les spécifications techniques
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/nodejs.svg?raw=true "NodeJS")
+
+
+Notre choix concernant les technologies à utiliser porte sur atlas, compass et la création d'une api NodeJS pour les requêtes 
 
 
 ## MongoDB vs MySQL
@@ -54,6 +72,7 @@ MongoDB et son langage d’interrogation est extrêmement puissant. Nous pouvons
  L’avantage de ce fonctionnement dans ce cours est, qu’il va falloir faire croitre notre application au fil du temps et effectuer des recherches poussées à des fins de statistiques, tout en épargnant certaines informations, et ce sur important jeux de données.
 
 Bien évidement nous verrons cela plus bas dans ce rapport.
+
 
 ## MongoDB du NoSQL
 
