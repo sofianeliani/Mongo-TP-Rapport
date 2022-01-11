@@ -46,7 +46,7 @@ Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui on
 
 ## Les spécifications techniques
 
-![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/nodejs.png?raw=true "NodeJS")
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/nodejs.png?raw=true "NodeJS") ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/icons/compass.png?raw=true "NodeJS")
 
 
 Notre choix concernant les technologies à utiliser porte sur atlas, compass et la création d'une api NodeJS pour les requêtes 
