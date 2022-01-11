@@ -25,6 +25,7 @@ On dit que le modèle de document mappe les objets du code de nos applications, 
 1. [MongoDB vs MySQL](#mongodb-vs-mysql)
 2. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
 3. [MongoDB du NoSQL](#mongodb-du-nosql)
+3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
 
 
 ## MongoDB vs MySQL
@@ -71,6 +72,20 @@ la communication https entre les nœuds de jeux de réplicas
 
 
 Attention, bien que MongoDB est force de proposition sur ce type de projet, et que il est l’objet de ce cours, d’autre SGBD sont présente sur le marché et mérite que l’on s’y attarde. 
+
+
+## Elasticsearch une alternative NoSQL
+
+Elasticsearch est un outil se présentant comme un SGBD orienté document et qui va nous permettre de mettre en place un système de recherche très complexe.
+
+Dans un premier temps nous pourrons stocker des informations, et dans un second temps nous pourrons les récupérer à l’aide de requêtes.
+
+Les avantages certains que possède Elasticsearch sont que les recherches peuvent être basé sur du texte et peuvent contenir des critères très poussés, d’organiser les résultats par pertinence (très utile pour créer un moteur de recherche par exemple), et il possède également une API dite RESTful afin de pouvoir communiquer facilement avec lui.
+
+Tout comme son confrère MongoDB, Elasticsearch stocke les données de manière non-structuré.
+Nous pouvons également le distribuer et nous permettre d’avoir plusieurs instances au niveau du réseau afin d’obtenir des résultats plus rapides.
+Une solution simple d’utilisation et efficace dans bien des domaines.
+
 
 
 
