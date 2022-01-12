@@ -40,8 +40,7 @@ Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui on
 3. [MongoDB du NoSQL](#mongodb-du-nosql)
 3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
-5. [Les requêtes géospatiales et notre projet](#les-requêtes-géospatiales-et-notre-projet)
-6. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
+5. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
 
 
 ## Les spécifications techniques
@@ -133,101 +132,23 @@ Si l’on souhaite trouver des éléments présents dans la base entièrement in
 
 Si l’on souhaite trouver des éléments présents dans la base partiellement inclus dans un polygone donné (pour représenter une rue par exemple)
 
-C’est la que la notion d’index géospatiaux fait son entré : Sources :
+C’est la que la notion d’index fait son entré : 
+
+Sources :
 
 (https://docs.mongodb.com/manual/geospatial-queries/)
 
 (https://practicalprogramming.fr/mongodb-index)
 
-Pour illustrer cela prenons le cas des Index 2d, qui permettent de placer des coordonnées sur un axe en 2 dimensions comme son nom l’indique. 
+Pour illustrer le cas pratique de notre projet nous avons utilisé un index de type "2dsphere" sur notre champ "coordinates", qui va nous servir à récupérer les documents compris dans une zone circulaire défini.
 
-La requête suivante porte sur des documents situés dans un rectangle défini par [0, 0] dans le coin inférieur gauche et par [100, 100] dans le coin supérieur droit.
+Voici l'exemple pratique ci dessous : 
 
-(https://docs.mongodb.com/manual/tutorial/query-a-2d-index/)
+"insert-image"
 
-```ini
-# MongoDB documentation
+Il est très intéressant voir indispensable de combiner ce type de requête avec de l'agrégation afin de filtrer nos recherches.
 
-db.places.find({
-    loc:
-    {
-        $geoWithin :
-        {
-            $box : [ 
-                [0, 0], 
-                [100, 100]
-            ]   
-        }
-    }
-})
-
-```
-
-Ou les index 2dsphere qui permettent de placer des coordonnées latitudes et longitudes.
-
-Prenons un exemple de cas ou une collection se nommant « places » avec des documents, stockent des données de localisation sous forme de point GeoJSON dans un champs nommé loc  :
-
-(https://docs.mongodb.com/manual/core/2dsphere/)
-
-```ini
-# MongoDB documentation
-
-db.places.insertMany( [
-    {
-        loc : { type: "Point", coordinates: [ -73.97, 40.77 ] },
-        name: "Central Park",
-        category : "Parks"
-    },
-    {
-        loc : { type: "Point", coordinates: [ -73.88, 40.78 ] },
-        name: "La Guardia Airport",
-        category : "Airport"
-    }
-    ])
-
-```
-
-Ou les index geoHaystack qui permettent de définir une aire suivant des points sur un axe en 2 dimensions.
-
-(https://docs.mongodb.com/manual/tutorial/build-a-geohaystack-index/)
-
-Pour ces documents en exemple : 
-
-```ini
-# MongoDB documentation
-
-{ _id : 100, pos: { lng : 126.9, lat : 35.2 } , type : "restaurant"}
-{ _id : 200, pos: { lng : 127.5, lat : 36.1 } , type : "restaurant"}
-{ _id : 300, pos: { lng : 128.0, lat : 36.7 } , type : "national park"}
-
-```
-
-Les index suivants stockent des clés dans une unité de longitude ou de latitude : 
-
-```ini
-# MongoDB documentation
-
-db.places.createIndex( 
-    { pos : "geoHaystack", type : 1 } ,
-    { bucketSize : 1 } 
-)
-
-```
-
-
-## Les requêtes géospatiales et notre projet
-
-Maintenant que nous en savons un peu plus sur les requêtes géospatiales et leur fonctionnement, la question suivante se pose.
-
-Comment cela peut il s’intégrer au projet dans cette semaine de cours ? 
-Dans notre projet et conformément aux conseils donnés par le formateur Mounir Bendahmane, celui-ci reposera sur la récupération de données clients.
-
-Il serait donc très intéressant de créer un document se chargeant de récupérer et distribuer toutes les informations statistiques voulus : Les zones qui sont les plus fréquentés, lesquels restaurants sont les plus fréquentés, les menus les plus commandés, etc …
-
-Nous pouvons également offrir une visu graphique sur la situation global et individuel de chaque restaurant, arrondissement, client ce qui ajoute du poids à notre argumentaire.
-Tout cela peut aider grandement aux diverses études de marchés de la marque et est au fond un système obligatoire intégrer pour y parvenir.
-
-MongoDB est force de proposition pour arriver à ce résultat pour toutes les raisons techniques cité plus haut.
+C'est ce que nous allons voir par la suite.
 
 
 ## Agrégation avec MongoDB
@@ -250,7 +171,6 @@ Chaque étape effectue une opération sur les documents d’entrée pour par exe
 Filtrer des documents, regrouper des documents puis calculer leurs valeurs.
 Les documents qui sortent d’une étape peuvent être utilisés par l’étape suivante.
 Un pipeline d’agrégation peut renvoyer des résultats pour des groupe de documents, comme pour calculer des totaux, une moyenne maximale ou une moyenne minimale par exemple.
-
 
 
 
