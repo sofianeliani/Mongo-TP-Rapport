@@ -51,7 +51,7 @@ Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui on
 
 Notre choix concernant les technologies à utiliser porte sur atlas, compass et la création d'une api NodeJS pour les requêtes.
 
-Ceci étant nous vous montreros au fur et à mesure de ce rapport le parallèle entre les requêtes faite avec notre API nodeJS et les requêtes natives.
+Ceci étant nous vous montrerons au fur et à mesure de ce rapport le parallèle entre les requêtes faite avec notre API nodeJS et les requêtes natives.
 
 Concernant notre choix technologique, en vue des consignes du formateur, et du travail de groupe imposé, il était préférable de choisir un outil performant et que chacun sait manipuler. Atlas offre un service gratuit et performant afin d'héberger une base de données Mongo via un cluster (accessible avec une simple ligne à copier-coller dans l'outil prévu à cet effet).
 
