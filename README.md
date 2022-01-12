@@ -187,6 +187,8 @@ Nous pouvons donc récupérer les informations clients en les filtrant afin de s
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetAggregateRequestWithResponse.PNG?raw=true "Aggregate Request")
 
+Comme nous pouvons le voir dans la réponse sur l'encadré droit de visual studio code, Mongo nous renvoi la liste des clients ayant visité le restaurant numéro un, et nous affiche leur nom et prénom respectif.
+
 Comme cité plus haut, un pipeline d'agrégation est un choix judicieux pour le simple fait que l'on veut renvoyer un résultat pour des groupes de documents et faire un total (le nombre total de visite sur un restaurant par exemple).
 
 La fonction aggregate() et les mots clés suivants :  $group, $sum pour sommer tous nos éléments
