@@ -164,15 +164,13 @@ Regrouper des valeurs lié à plusieurs documents, effectuer des opérations sur
 
 >L’agrégation « Pipelines »
 
-Toujours d’après la documentation officielle, un pipeline d’agrégation se constitue par le fait de traité en une ou plusieurs étapes l’information.
+Toujours d’après la documentation officielle, un pipeline d’agrégation se constitue par le fait de traiter, en une ou plusieurs étapes, l’information.
 
 Chaque étape effectue une opération sur les documents d’entrée pour par exemple : 
 
 Filtrer des documents, regrouper des documents puis calculer leurs valeurs.
 Les documents qui sortent d’une étape peuvent être utilisés par l’étape suivante.
-Un pipeline d’agrégation peut renvoyer des résultats pour des groupe de documents, comme pour calculer des totaux, une moyenne maximale ou une moyenne minimale par exemple.
-
-
+Un pipeline d’agrégation peut renvoyer des résultats pour des groupe de documents, comme pour calculer des totaux, une moyenne maximale ou une moyenne minimale par exemple, c'est pour cela que dans ce projet nous utiliserons exclusivement des pipelines.
 
 
 Afin d’illustrer correctement le terme d’agrégation, nous allons utiliser la database de notre projet et voir comment l'agrégation peut nous servir.
