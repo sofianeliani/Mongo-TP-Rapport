@@ -255,10 +255,17 @@ Un pipeline d’agrégation peut renvoyer des résultats pour des groupe de docu
 
 
 
-Afin d’illustrer correctement le terme d’agrégation, nous allons utiliser notre collection Restaurants vu en cours.
+Afin d’illustrer correctement le terme d’agrégation, nous allons utiliser la database de notre projet et voir comment l'agrégation peut nous servir.
 
-Celle-ci contient les adresses complètes, les arrondissements, le type de cuisine, la notation, le nom, la zone géographique et la longitude-latitude de chaque restaurant.
-Nous pouvons donc calculer par exemple, le nombre total de commandes (si il y’en a) faite sur un restaurant en particulier et faire la somme de celle-ci.
+Celle-ci contient deux collections.
+
+Une collection restaurants qui contient : les adresses complètes, les villes, le type de cuisine, le nom, la zone géographique et la longitude-latitude de chaque restaurant.
+
+Une collection clients qui contient : le noms, prénom, email, intérêts, age, ville, téléphone, restaurants visités et point de fidélité 
+
+Nous pouvons donc récupérer les informations utilisateurs en les filtrant.
+
+Comme cité plus haut, un pipeline d'agrégation est un choix judicieux pour le simple fait que l'on veut renvoyer un résultat pour des groupes de documents et faire un total (le nombre total de visite sur un restaurant par exemple).
 
 La fonction aggregate() et les mots clés suivants :  $group, $sum pour sommer tous nos éléments
 
