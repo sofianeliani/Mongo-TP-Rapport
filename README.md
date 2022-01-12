@@ -183,9 +183,9 @@ Une collection restaurants qui contient : les adresses complètes, les villes, l
 
 Une collection clients qui contient : le noms, prénom, email, intérêts, age, ville, téléphone, restaurants visités et point de fidélité 
 
-Nous pouvons donc récupérer les informations utilisateurs en les filtrant comme on peut le voir ci-dessous : 
+Nous pouvons donc récupérer les informations clients en les filtrant afin de savoir quels clients ont visité le restaurant numéro un comme on peut le voir ci-dessous : 
 
-"insert-image"
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetAggregateRequestWithResponse.png?raw=true "Aggregate Request")
 
 Comme cité plus haut, un pipeline d'agrégation est un choix judicieux pour le simple fait que l'on veut renvoyer un résultat pour des groupes de documents et faire un total (le nombre total de visite sur un restaurant par exemple).
 
