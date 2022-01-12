@@ -185,7 +185,7 @@ Nous pouvons donc récupérer les informations clients en les filtrant afin de s
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetAggregateRequestWithResponse.PNG?raw=true "Aggregate Request")
 
-Comme nous pouvons le voir dans la réponse sur l'encadré droit de visual studio code, Mongo nous renvoi la liste des clients ayant visité le restaurant numéro un, et nous affiche leur nom et prénom respectif.
+Comme nous pouvons le voir dans la réponse sur l'encadré droit de visual studio code, Mongo nous renvoi la liste des clients ayant visités le restaurant numéro un, et nous affiche leur nom et prénom respectif.
 
 
 # }
