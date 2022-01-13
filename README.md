@@ -91,7 +91,7 @@ Concernant notre choix technologique, en vue des consignes du formateur, et du t
 
 C'est ensuite compass qui prend le relai, pour sa simplicité d'installation et d'utilisation. Compass va très facilement nous aider à naviguer dans notre base, à tester nos requêtes avec son terminal intégrer, et va également nous offrir une belle visu sur le jeux de données présent dans la base.
 
-Pour les tests de requêtes nous privilégions quand même le terminal visual studio code avec son plugin MongoDB pour plus de praticité.
+Pour les tests de requêtes nous privilégions quand même visual studio code avec son plugin MongoDB pour plus de praticité.
 
 ## MongoDB du NoSQL
 
