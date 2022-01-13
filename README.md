@@ -27,7 +27,12 @@ Et voici la réponse de MongoDB après avoir inséré les données :
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateCollectionRestaurantResponse.PNG?raw=true "projet Create Collection Restaurant Response")
 
-La base de données Restaurants possède également une collection du même nom.
+
+Voici un visuel de la collection Restaurants après l'insertion des données : 
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetDbRestaurant.PNG?raw=true "projet Db Restaurant")
+
+
 Présent dans ces documents vous pouvez voir des données en format JSON, et c’est ce qui fait qu’un document à l’autre, la structure des données peut changer au fil du temps sans impacter le fonctionnement de notre base.
 On dit que le modèle de document mappe les objets du code de nos applications, ce qui facilite grandement le traitement des données.
 
@@ -79,8 +84,6 @@ C'est ensuite compass qui prend le relai, pour sa simplicité d'installation et 
 
 Pour les tests de requêtes nous privilégions quand même le terminal visual studio code avec son plugin MongoDB pour plus de praticité.
 
-![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetDbRestaurant.PNG?raw=true "projet Db Restaurant")
-
 ## MongoDB du NoSQL
 
 A contrario des SGBDR (Système de gestion de base de données relationnel), MongoDB qui lui s’appui sur le NoSQL s’écarte de cette notion relationnelle pour des problèmes de performance et de scalabilité.
@@ -104,7 +107,7 @@ rapidement tout en gérant un important flux de données
 la communication https entre les nœuds de jeux de réplicas
 
 
-Attention, bien que MongoDB est force de proposition sur ce type de projet, et que il est l’objet de ce cours, d’autre SGBD sont présente sur le marché et mérite que l’on s’y attarde. 
+Attention, bien que MongoDB est force de proposition sur ce type de projet, et que il est l’objet de ce cours, d’autre SGBD sont présents sur le marché et mérite que l’on s’y attarde. 
 
 
 ## Elasticsearch une alternative NoSQL
