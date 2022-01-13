@@ -284,5 +284,11 @@ Il existe bien évidemment bien d'autres paramètres pour la méthode explain co
 
 Tous pouvant se suivre par une méthode, comme find() par exemple
 
+Pour terminer, ce qui sera vraiment utile dans notre projet sera tout en bas de la réponse avec une requête défini comme sur la capture d'écran ci-dessous : 
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetMethodExplain3.PNG?raw=true "project Method Explain")
+
+
+Ici nous avons le temps de réponse de chaque index, ce qui va nous permettre d'améliorer les performances de notre application si besoin.
 
 # }
