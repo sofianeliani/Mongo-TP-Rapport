@@ -232,6 +232,20 @@ Ici nous pouvons voir très clairement que nous pouvons récpérer les restauran
 Ce système va être très pratique pour récupérer les données clients et les filtrer : 
 
 
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetClientsGeoNearResult1.PNG?raw=true "projet Clients GeoNear Result")
+
+
+
+Sur la capture d'écran ci-dessus, nous récupérons tout d'abord avec une requête géospatial les clients autour de coordonnées.
+
+notez qu'un filtre dans le paramètre $geoNear est en place :  
+
+>query : { "localisation.city" : "Lyon"}
+
+Pour notre requêtes nous filtrons à l'aide de l'agrégation le résultat obtenu (anciennement filtré par le paramètre query), ce qui nous retourne la liste des clients habitant sur Lyon et faisant partie d'une sphère défini par nos coordonnées stocké dans la clé coordinates et par la distance maximale.
+
+
+
 
 
 # }
