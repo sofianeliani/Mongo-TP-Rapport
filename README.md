@@ -47,6 +47,14 @@ Le but est de fournir un projet d'application centré sur un stockage des donné
 
 Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui ont été fait et l'utilité que cela présente pour un projet de cette ampleur.
 
+Le but de notre projet étant d'accumuler, stocker et filtrer les données clients.
+
+Le fonctionnement sera le suivant : les clients pourrons renseigner leurs informations personnelles qui seront utilisé par la suite.
+
+Notez qu'a chaque fois qu'un utilisateur entrera un numéro de téléphone portable, celui-ci se verra attribuer des points de fidelités qu'il pourra utiliser pour son usage personnel sous forme de réductions ou d'offres diverses.
+
+Afin d'éviter les abus sur cette fonctionnalité un délai de 5h sera attribué à chaque utilisateur pour récupérer ses points de fidelité, bien sûr plus le client aura renseigné d'informations plus il gagnera de points.
+
 >Pourquoi MongoDB et non MySQL
 
 Comme vu plus haut dans ce rapport, MongoDB est une base de données orientée documents à contrario de MySQL. Et cela présente un avantage certain dans le cadre de ce projet. 
@@ -212,6 +220,18 @@ Nous pouvons donc récupérer les informations clients en les filtrant afin de s
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetAggregateRequestWithResponse.PNG?raw=true "Aggregate Request")
 
 Comme nous pouvons le voir dans la réponse sur l'encadré droit de visual studio code, Mongo nous renvoi la liste des clients ayant visités le restaurant numéro un, et nous affiche leur nom et prénom respectif.
+
+
+Pour notre dernier test avec la base et nous montrer l'importance de combiné agrégation avec les requêtes géospatiales, voyons la requête et sa réponse :
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projectCombineGeoSWithAggregation.PNG?raw=true "project Combine GeoS With Aggregation")
+
+
+Ici nous pouvons voir très clairement que nous pouvons récpérer les restaurants autour d'un point donné, et que l'on filtre par la suite à l'aide de notre agrégation tous les restaurants sur la ville de Lyon.
+
+Ce système va être très pratique pour récupérer les données clients et les filtrer : 
+
+
 
 
 # }
