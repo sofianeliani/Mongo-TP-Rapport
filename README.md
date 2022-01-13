@@ -280,7 +280,7 @@ Il existe bien évidemment bien d'autres paramètres pour la méthode explain co
 
 >explain(allPlansExecution)
 
-Tous pouvant se suivre par une méthode également comme find() par exemple
+Tous pouvant se suivre par une méthode, comme find() par exemple
 
 
 # }
