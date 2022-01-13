@@ -57,9 +57,9 @@ Il existe bien évidement bien d’autres différences, mais nous en terminerons
 ## Sommaire
 
 0. [Les spécifications techniques](#les-spécifications-techniques)
-1. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
-2. [MongoDB du NoSQL](#mongodb-du-nosql)
-3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
+1. [MongoDB du NoSQL](#mongodb-du-nosql)
+2. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
+3. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
 5. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
 
@@ -78,17 +78,6 @@ Concernant notre choix technologique, en vue des consignes du formateur, et du t
 C'est ensuite compass qui prend le relai, pour sa simplicité d'installation et d'utilisation. Compass va très facilement nous aider à naviguer dans notre base, à tester nos requêtes avec son terminal intégrer, et va également nous offrir une belle visu sur le jeux de données présent dans la base (voir screenshot ci-dessous).
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/Compass.PNG?raw=true "compass")
-
-
-
-## Les fonctionnalités avancées
-
-MongoDB et son langage d’interrogation est extrêmement puissant. Nous pouvons nous permettre d’effectuer toutes les requêtes possibles et de surcroît avoir un résultat beaucoup plus poussé, tout cela de manière simple contrairement à une base relationnelle tel que MySQL par exemple.
-
- L’avantage de ce fonctionnement dans ce cours est, qu’il va falloir faire croitre notre application au fil du temps et effectuer des recherches poussées à des fins de statistiques, tout en épargnant certaines informations, et ce sur important jeux de données.
-
-Bien évidement nous verrons cela plus bas dans ce rapport.
-
 
 ## MongoDB du NoSQL
 
@@ -128,6 +117,13 @@ Tout comme son confrère MongoDB, Elasticsearch stocke les données de manière 
 Nous pouvons également le distribuer et nous permettre d’avoir plusieurs instances au niveau du réseau afin d’obtenir des résultats plus rapides.
 Une solution simple d’utilisation et efficace dans bien des domaines.
 
+## Les fonctionnalités avancées
+
+MongoDB et son langage d’interrogation est extrêmement puissant. Nous pouvons nous permettre d’effectuer toutes les requêtes possibles et de surcroît avoir un résultat beaucoup plus poussé, tout cela de manière simple contrairement à une base relationnelle tel que MySQL par exemple.
+
+L’avantage de ce fonctionnement dans ce cours est, qu’il va falloir faire croitre notre application au fil du temps et effectuer des recherches poussées à des fins de statistiques, tout en épargnant certaines informations, et ce sur un important jeu de données.
+
+Nous allons donc voir certaines de ces fonctionnalités avancées.
 
 ## Les requêtes géospatiales 
 
@@ -153,7 +149,7 @@ Pour illustrer le cas pratique de notre projet nous avons utilisé un index de t
 
 Voici l'exemple pratique ci dessous : 
 
-"insert-image"
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateIndex2dsphere.PNG?raw=true "projet Create Index 2dsphere")
 
 Il est très intéressant voir indispensable de combiner ce type de requête avec de l'agrégation afin de filtrer nos recherches.
 
