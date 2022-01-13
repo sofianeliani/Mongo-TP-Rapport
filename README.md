@@ -75,6 +75,7 @@ Il existe bien évidement bien d’autres différences, mais nous en terminerons
 3. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
 5. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
+6. [La méthode explain](#la-methode-explain)
 
 
 ## Les spécifications techniques
@@ -254,6 +255,9 @@ Nous nous retrouverons en base avec l'estimation de la distance entre le client 
 Notez bien que nous avons effectué le traitement de cette requêtes dans une pipeline, appelé en bas de notre requête complète : 
 
 >db.Clients.aggregate(pipeline)
+
+
+## La méthode explain
 
 
 # }
