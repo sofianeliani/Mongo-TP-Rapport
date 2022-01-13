@@ -160,6 +160,18 @@ Nous pouvons visualiser l'index sur atlas par exemple :
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateIndex2dsphere2.PNG?raw=true "projet Create Index 2dsphere2.PNG")
 
+En vous montrant un exemple concret de l'utilisation d'une requête géospatiale de type 2dsphere vous comprendrez pourquoi cela est primordial dans un projet de cette ampleur : 
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetNearSphereResult1.PNG?raw=true "projet Near Sphere Result1.PNG")
+
+Sur la capture d'écran nous voyons un résultat, tentons d'augmenter la distance maximale :
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetNearSphereResult2.PNG?raw=true "projet Near Sphere Result2.PNG")
+
+En augmentant la distance maximale, nous récupérons les informations d'un autre restaurant.
+
+Cela prouve que nous pouvons bien retourner à l'utilisateur tous les restaurants présents dans une certaine zone.
+
 Il est très intéressant voir indispensable de combiner ce type de requête avec de l'agrégation afin de filtrer nos recherches.
 
 C'est ce que nous allons voir par la suite.
