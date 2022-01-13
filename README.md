@@ -257,7 +257,7 @@ Notez bien que nous avons effectué le traitement de cette requêtes dans une pi
 >db.Clients.aggregate(pipeline)
 
 
-## La méthode explain
+## La methode explain
 
 
 # }
