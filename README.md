@@ -245,7 +245,9 @@ notez qu'un filtre dans le paramètre $geoNear est en place :
 Pour notre requêtes nous filtrons à l'aide de l'agrégation le résultat obtenu (anciennement filtré par le paramètre query), ce qui nous retourne la liste des clients habitant sur Lyon et faisant partie d'une sphère défini par nos coordonnées stocké dans la clé coordinates et par la distance maximale.
 
 
+Notez bien que nous avons effectué le traitement de cette requêtes dans une pipeline, appelé en bas de notre requête complète : 
 
+>db.Clients.aggregate(pipeline)
 
 
 # }
