@@ -145,11 +145,15 @@ Sources :
 
 (https://practicalprogramming.fr/mongodb-index)
 
-Pour illustrer le cas pratique de notre projet nous avons utilisé un index de type "2dsphere" sur notre champ "coordinates", qui va nous servir à récupérer les documents compris dans une zone circulaire défini.
+Pour illustrer le cas pratique de notre projet nous avons utilisé un index de type "2dsphere" sur notre champ "localisation", qui va nous servir à récupérer les documents compris dans une zone circulaire défini (grâce à leurs coordonnées).
 
-Voici l'exemple pratique ci dessous : 
+Voici l'exemple pratique ci-dessous : 
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateIndex2dsphere.PNG?raw=true "projet Create Index 2dsphere")
+
+Nous pouvons visualiser l'index sur atlas par exemple : 
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateIndex2dsphere2.PNG?raw=true "projet Create Index 2dsphere2.PNG")
 
 Il est très intéressant voir indispensable de combiner ce type de requête avec de l'agrégation afin de filtrer nos recherches.
 
