@@ -259,5 +259,28 @@ Notez bien que nous avons effectué le traitement de cette requêtes dans une pi
 
 ## La methode explain
 
+La méthode explain décrite dans cette partie va nous permettre d'afficher à l'écran un document qui contiendra toutes les étapes et les informations de la requêtes, ici grâce au paramètre "executionStats" 
+
+>db.Clients.aggregate(pipeline).explain("executionStats")
+
+Nous pouvons afficher toutes les statistiques d'éxécution au niveau de la collection.
+
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projectMethodExplain.PNG?raw=true "project Method Explain")
+
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projectMethodExplain2.PNG?raw=true "project Method Explain")
+
+
+Il existe bien évidemment bien d'autres paramètres pour la méthode explain comme : 
+
+>explain(informations)
+
+>explain(queryPlanner)
+
+>explain(allPlansExecution)
+
+Tous pouvant se suivre par une méthode également comme find() par exemple
+
 
 # }
