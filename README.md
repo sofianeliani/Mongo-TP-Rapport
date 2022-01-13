@@ -4,19 +4,30 @@
 
 Voici le rapport de la semaine de cours qui va nous permettre de suivre notre progression sur MongoDB et de répondre à la problématique posé par le formateur.
 
-## Présentation de MongoDB
+## Présentation de la base MongoDB
 
 MongoDB est SGBD (Système de gestion de base de données) orienté documents et de surcroît non relationnel (à contrario de son confrère MySQL par exemple présenté un peu plus bas dans ce rapport).
 Nous entendons orienter documents par le fait qu’un document dans mongo db peut-être vu comme un ensemble de clé valeur très simple à utiliser. 
 
 Nous utilisons javascript comme langage natif avec MongoDB.
 MongoDB se caractérise par son contenu, des documents et des collections réunies en base.
-Voici un exemple de documents stocké dans une collections appelé Restaurants :
+Voici une capture d'écran de la création de notre collection "Clients" stocké dans la base:
 
-![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/Documents-Example.png?raw=true "Documents Example")
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateCollectionClient.PNG?raw=true "projet Create Collection Client")
 
+Ici on créer la collection "Clients" en insérant directement les données.
 
-Ceci est un exemple d’une base de données par le formateur Mounir Bendahmane dans le cadre de ce cours. La base de données Restaurants possède également une collection du même nom.
+Nous allons reproduire cette opération pour nos : "Restaurants"
+
+Nous avons décidé de créer la collection sans insérer de données au départ :
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateCollectionRestaurant.PNG?raw=true "projet Create Collection Restaurant")
+
+Et voici la réponse de MongoDB après avoir inséré les données : 
+
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateCollectionRestaurantResponse?raw=true "projet Create Collection Restaurant Response")
+
+La base de données Restaurants possède également une collection du même nom.
 Présent dans ces documents vous pouvez voir des données en format JSON, et c’est ce qui fait qu’un document à l’autre, la structure des données peut changer au fil du temps sans impacter le fonctionnement de notre base.
 On dit que le modèle de document mappe les objets du code de nos applications, ce qui facilite grandement le traitement des données.
 
@@ -31,13 +42,23 @@ Le but est de fournir un projet d'application centré sur un stockage des donné
 
 Bien évidement nous vous montrerons ci-dessous  les choix technologiques qui ont été fait et l'utilité que cela présente pour un projet de cette ampleur.
 
+>Pourquoi MongoDB et non MySQL
+
+Comme vu plus haut dans ce rapport, MongoDB est une base de données orientée documents à contrario de MySQL. Et cela présente un avantage certain dans le cadre de ce projet. 
+Le fonctionnement de MongoDB ce distingue de MySQL en matière de mémorisation des données, malgré la similitude que l’on peut retrouver dans les deux cas :
+Tout d’abord nous pouvons voir que les tableaux (MySQL) sont remplacés par des collections (MongoDB)
+Les champs les lignes et les colonnes (MySQL) sont remplacés par des documents en format JSON
+Toutes les lignes d’un tableau MySQL ont une composition identique à l’inverse de MongoDB ou chaque document peut évoluer au fil du temps de manière individuel sans impacter le fonctionnement de la base.
+
+La clé doit être unique dans les documents (MongoDB) mais peut se retrouver dans d’autres documents, ce qui est impossible avec MySQL.
+Sur MySQL il est obligatoire d’établir des relations (JOINS) entre les différents tableaux
+Il existe bien évidement bien d’autres différences, mais nous en terminerons avec cette brève présentation.
 
 ## Sommaire
 
 0. [Les spécifications techniques](#les-spécifications-techniques)
-1. [MongoDB vs MySQL](#mongodb-vs-mysql)
-2. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
-3. [MongoDB du NoSQL](#mongodb-du-nosql)
+1. [Les fonctionnalités Avancées](#les-fonctionnalités-avancées)
+2. [MongoDB du NoSQL](#mongodb-du-nosql)
 3. [Elasticsearch une alternative NoSQL](#elasticsearch-une-alternative-nosql)
 4. [Les requêtes géospatiales](#les-requêtes-géospatiales)
 5. [Agrégation avec MongoDB](#agrégation-avec-MongoDB)
@@ -58,18 +79,6 @@ C'est ensuite compass qui prend le relai, pour sa simplicité d'installation et 
 
 ![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/Compass.PNG?raw=true "compass")
 
-
-## MongoDB vs MySQL
-
-Comme vu plus haut dans ce rapport, MongoDB est une base de données orientée documents à contrario de MySQL. Et cela présente un avantage certain dans le cadre de ce projet vu en cours. 
-Le fonctionnement de MongoDB ce distingue de MySQL en matière de mémorisation des données, malgré la similitude que l’on peut retrouver dans les deux cas :
-Tout d’abord nous pouvons voir que les tableaux (MySQL) sont remplacés par des collections (MongoDB)
-Les champs les lignes et les colonnes (MySQL) sont remplacés par des documents en format JSON
-Toutes les lignes d’un tableau MySQL ont une composition identique à l’inverse de MongoDB ou chaque document peut évoluer au fil du temps de manière individuel sans impacter le fonctionnement de la base.
-
-La clé doit être unique dans les documents (MongoDB) mais peut se retrouver dans d’autres documents, ce qui est impossible avec MySQL.
-Sur MySQL il est obligatoire d’établir des relations (JOINS) entre les différents tableaux
-Il existe bien évidement bien d’autres différences, mais nous en terminerons avec cette brève présentation et nous en verrons d’autres par la suite.
 
 
 ## Les fonctionnalités avancées
