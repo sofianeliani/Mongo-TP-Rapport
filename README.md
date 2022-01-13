@@ -259,6 +259,8 @@ Notez bien que nous avons effectué le traitement de cette requêtes dans une pi
 
 ## La methode explain
 
+Source : (https://www.editions-eni.fr/open/mediabook.aspx?idR=72b49187e32e68f800b4779b066dec4d)
+
 La méthode explain décrite dans cette partie va nous permettre d'afficher à l'écran un document qui contiendra toutes les étapes et les informations de la requêtes, ici grâce au paramètre "executionStats" 
 
 >db.Clients.aggregate(pipeline).explain("executionStats")
