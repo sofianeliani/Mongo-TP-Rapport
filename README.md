@@ -25,7 +25,7 @@ Nous avons décidé de créer la collection sans insérer de données au départ
 
 Et voici la réponse de MongoDB après avoir inséré les données : 
 
-![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateCollectionRestaurantResponse?raw=true "projet Create Collection Restaurant Response")
+![Alt text](https://github.com/sofianeliani/Mongo-TP-Rapport/blob/main/img/projetCreateCollectionRestaurantResponse.PNG?raw=true "projet Create Collection Restaurant Response")
 
 La base de données Restaurants possède également une collection du même nom.
 Présent dans ces documents vous pouvez voir des données en format JSON, et c’est ce qui fait qu’un document à l’autre, la structure des données peut changer au fil du temps sans impacter le fonctionnement de notre base.
